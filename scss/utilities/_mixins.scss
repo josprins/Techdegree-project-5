@@ -1,0 +1,44 @@
+// ------------------------------------- //
+//             MIXINS PARTIAL            //
+// ------------------------------------- //
+
+// ----------- MEDIA QUERIES ----------- //
+
+
+@mixin sm {
+  @media (min-width: #{$bp-screen-sm}) {
+      @content;
+  }
+}
+
+@mixin med {
+  @media (min-width: #{$bp-screen-med}) {
+     @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$bp-screen-lg}) {
+     @content;
+  }
+}
+
+// ---------- FLEXBOX SETTINGS --------- //
+
+@mixin grid-row {
+  max-width: $max-width;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @for $i from 1 through $columns {
+
+    .grid__col--#{$i} {
+      width: (percentage($i / $columns) - $gutter-width);
+      margin: 0 ($gutter-width / 2);
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

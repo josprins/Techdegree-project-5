@@ -1,0 +1,16 @@
+// ------------------------------------- //
+//           LINKS                       //
+// ------------------------------------- //
+
+%link {
+  color: $link-color;
+  font-weight: $weight-font-bold;
+  text-decoration: none;
+  &:hover {
+    color: darken($link-color, 15%);     
+  }
+}
+
+%border-radius {
+  border-radius: em(5px) em(5px);
+} 

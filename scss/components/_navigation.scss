@@ -1,0 +1,16 @@
+// ------------------------------------- //
+//               NAVIGATION              // 
+// ------------------------------------- //
+
+.nav {
+  @include med {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.nav__item a {
+  @extend %nav__item--link;
+}

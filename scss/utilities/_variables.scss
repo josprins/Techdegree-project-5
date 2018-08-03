@@ -1,0 +1,85 @@
+// ------------------------------------- //
+//           VARIABLES                   //
+// ------------------------------------- //
+
+
+// ---------------- FONTS -------------- //
+
+$font-stack: 'Helvetica Neue', Helvetica, sans-serif;
+
+$weight-font-light   : 100;
+$weight-font-regular : 300;
+$weight-font-bold    : 600;
+
+
+// ------------- BREAKPOINTS ----------- //
+
+$bp-screen-sm   : 480px;
+$bp-screen-med  : 769px;
+$bp-screen-lg   : 1400px;
+
+
+// --------------- COLORS -------------- //
+
+$grey-light           : #aaaaaa;
+$grey-dark            : #707070;
+$white                : #fff;
+
+$font-color           : $grey-light;
+$font-nav-color       : $grey-dark;
+$font-grid-color      : $grey-light;
+
+$cyan                 : #63e4fa;
+$mint                 : #68d6b7;
+$green                : #60c47a;
+$coral                : #f28a8e;
+$salmon               : #f7725d;
+$purple               : #9b70ef;
+
+$cyan-light           : lighten($cyan, 10%);
+$mint-light           : lighten($mint, 10%);
+$green-light          : lighten($green, 10%);
+$coral-light          : lighten($coral, 10%);
+$salmon-light         : lighten($salmon, 10%);
+$purple-light         : lighten($purple, 20%);
+
+$cyan-dark            : darken($cyan, 30%);
+$mint-dark            : darken($mint, 10%);
+$green-dark           : darken($green, 10%);
+$coral-dark           : darken($coral, 10%);
+$salmon-dark          : darken($salmon, 10%);
+$purple-dark          : darken($purple, 10%);
+
+$primary-color        : $mint;
+$secondary-color      : $grey-dark;
+
+$link-color           : $cyan;
+
+$btn-nav-color        : $mint;
+$btn-default-color    : $cyan;
+$btn-success-color    : $green;
+$btn-error-color      : $coral;
+$btn-warning-color    : $salmon;
+$btn-info-color       : $purple;
+
+$btn-text-color       : $white;
+
+$border-blockq-color  : $mint;
+$border-form-color    : $mint;
+$border-img-color     : $grey-light;
+
+$grid-col-3-color     : $purple-light;
+$grid-col-4-color     : $cyan-light;
+$grid-col-5-color     : $green-light;
+$grid-col-6-color     : $cyan-dark;
+$grid-col-7-color     : $coral-light;
+$grid-col-8-color     : $salmon-light;
+$grid-col-12-color    : $mint-light;
+
+
+
+// ---------------- GRID ---------------- // 
+
+$max-width            : 1400px;
+$gutter-width         : 2%;
+$columns              : 12;

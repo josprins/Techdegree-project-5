@@ -1,0 +1,21 @@
+// ------------------------------------- //
+//                  FORMS                //
+// ------------------------------------- //
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  width: 90%;
+  padding: em(10px);
+  margin: em(18px) 5%;
+  border: none;
+  border-bottom: em(5px) solid $border-form-color;
+}
+
+.form .btn--default {
+  width: 100%;
+  margin: 0;
+}
+

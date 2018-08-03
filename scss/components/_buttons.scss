@@ -1,0 +1,50 @@
+// ------------------------------------- //
+//                BUTTONS                //
+// ------------------------------------- //
+
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+  @extend %border-radius;
+  padding: em(15px);
+  margin: em(20px) 0;
+  text-align: center;
+  border: none;
+  display: block;
+  width: 100%;
+  color: $btn-text-color;
+  text-transform: uppercase;
+    &:hover {
+        opacity: 0.85;      
+    }
+
+  @include med {
+    margin: 0 em(15px) em(15px) em(15px);
+    width: auto;
+    display: inline-block;
+    padding-left: em(40px);
+    padding-right: em(40px);
+  }
+}
+
+.btn--default.theme__colors {
+  background: $btn-default-color;
+}
+
+.btn--success.theme__colors {
+  background: $btn-success-color;
+}
+
+.btn--error.theme__colors {
+  background: $btn-error-color;
+}
+
+.btn--warning.theme__colors {
+  background: $btn-warning-color;
+}
+
+.btn--info.theme__colors {
+  background: $btn-info-color;
+}

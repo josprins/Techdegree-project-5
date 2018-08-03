@@ -1,0 +1,34 @@
+// ------------------------------------- //
+//              TYPOGRAPHY               //
+// ------------------------------------- //
+
+.container {
+  font-family: $font-stack;
+  color: $font-color;
+  margin: 50px;
+}
+
+.form__input[placeholder] {
+  font-family: $font-stack;
+}
+
+.headline--primary {
+  @extend %headline--primary;
+}
+
+.headline--secondary {
+  @extend %headline--secondary;
+}
+
+.blockquote {
+  @extend %border-radius;
+  font-weight: $weight-font-light;
+  font-size: em(26px);
+  font-style: italic;
+  padding-left: em(10px);
+  border-left: em(5px) solid $border-blockq-color;
+}
+
+.link {
+  @extend %link;
+}

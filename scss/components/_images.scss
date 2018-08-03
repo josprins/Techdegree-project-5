@@ -1,0 +1,33 @@
+// ------------------------------------- //
+//              IMAGES                   // 
+// ------------------------------------- //
+
+.img--logo {
+  margin: 0 auto;
+  margin-bottom: em(30px);
+  display: block;
+
+  @include med {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-bottom: 0;
+  }
+}
+
+.img--frame {
+  @extend %image-width;
+  padding: em(10px);
+  margin: em(20px) 0;
+  border: 1px solid $border-img-color;
+
+  align-self: start;
+}
+
+.img--avatar {
+  margin: 0 auto;
+  display: block;
+
+  align-self: start;
+}
