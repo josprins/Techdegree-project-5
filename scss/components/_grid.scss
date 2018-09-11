@@ -2,11 +2,16 @@
 //                  GRID                 //
 // ------------------------------------- //
 
+
 .grid__row {
   margin: em(38px) 0;
 
   @include med {
     @include grid-row;
+  }
+  @include lg {
+        max-width: 1400px;
+        margin: auto;
   }
 }
 
@@ -31,6 +36,15 @@
   color: $font-grid-color;
   padding: em(13px);
 }
+
+
+// for loop for grid colors (can't get it to work)
+
+//@for $i from 3 through 8 { 
+//  .grid__col--#{$i}.theme__colors {
+//  background: $grid-col-#{$1}-color;
+//  }
+//}
 
 .grid__col--3.theme__colors {
   background: $grid-col-3-color;
