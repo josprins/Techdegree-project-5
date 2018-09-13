@@ -1,0 +1,61 @@
+// ------------------------------------- //
+//       HEADERS                         //
+// ------------------------------------- //
+
+
+%headline--primary {
+  font-size: em(32px);
+  font-weight: $weight-font-bold;
+  color: $primary-color;
+  margin-left: 20px;
+}
+
+%headline--secondary {
+  margin-top: em(50px);
+  margin-bottom: em(30px);
+  font-size: em(18px);
+  font-weight: $weight-font-light;
+  color: $secondary-color;
+}
+
+// ------------------------------------- //
+//          IMAGES                       //
+// ------------------------------------- //
+
+%image-width {
+  width: 100%;
+}
+
+// ------------------------------------- //
+//           LINKS                       //
+// ------------------------------------- //
+
+%link {
+  color: $link-color;
+  font-weight: $weight-font-bold;
+  text-decoration: none;
+  &:hover {
+    color: darken($link-color, 15%);     
+  }
+}
+
+%border-radius {
+  border-radius: em(5px) em(5px);
+} 
+
+// ------------------------------------- //
+//        NAVIGATION                     //
+// ------------------------------------- //
+
+%nav__item--link {
+  text-decoration: none;
+  color: $grey-dark;
+  display: block;
+  padding: em(15px);
+  text-align: center;
+  &:hover {
+    @extend %border-radius;
+    color: $btn-text-color;
+    background: $btn-nav-color;
+  }
+} 
